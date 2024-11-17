@@ -19,14 +19,6 @@ public class ColaCarpetas {
 
     public synchronized void push(File dir)
     {
-        /*
-        try {
-            wait();
-        } catch (InterruptedException e) {
-            
-        }
-        notify();
-        */
         cola.add(dir);
     }
 
