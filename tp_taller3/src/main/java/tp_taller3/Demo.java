@@ -6,7 +6,11 @@ public class Demo {
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
 
-        String nombreArchivo = "RIP.txt";
+        System.out.print("Ingrese el nombre del archivo que desea buscar: \n");
+        Scanner scanner = new Scanner(System.in);
+        String nombreArchivo = scanner.nextLine();
+        scanner.close();
+        
         boolean encontrado = false;
         ColaCarpetas colaCarpetas = new ColaCarpetas();
 
